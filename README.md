@@ -2,6 +2,27 @@
 
 Small Go program to setup domain validation for Tailscale custom OCID using a webfinger
 
+# Certbot Request a Certificate
+
+Install certbot
+
+Ubuntu
+```bash
+apt install -y certbot
+```
+
+RHEL
+```bash
+yum install -y certbot
+```
+
+Request a certificate
+```
+certbot certonly -d mydomain.com
+```
+
+Save the location of the certificate and private key for use in the program.
+
 # Instructions
 
 Replace this line with your TLS cert and key
